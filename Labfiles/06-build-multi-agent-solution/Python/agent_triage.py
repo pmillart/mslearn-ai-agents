@@ -103,7 +103,8 @@ with agents_client:
         name=effort_agent_name,
         instructions=effort_agent_instructions
     )
-     effort_agent_tool = ConnectedAgentTool(
+    
+    effort_agent_tool = ConnectedAgentTool(
         id=effort_agent.id, 
         name=effort_agent_name, 
         description="Determines the effort required to complete the ticket"
