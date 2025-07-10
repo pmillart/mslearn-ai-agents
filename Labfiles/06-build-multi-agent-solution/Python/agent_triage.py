@@ -91,11 +91,11 @@ with agents_client:
         name=team_agent_name,
         instructions=team_agent_instructions
     )
- team_agent_tool = ConnectedAgentTool(
-     id=team_agent.id, 
-     name=team_agent_name, 
-     description="Determines which team should take the ticket"
- )
+    team_agent_tool = ConnectedAgentTool(
+        id=team_agent.id, 
+         name=team_agent_name, 
+         description="Determines which team should take the ticket"
+    )
 
     # Create the effort agent and connected tool
     effort_agent = agents_client.create_agent(
